@@ -1,0 +1,40 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon --inspect src/index.js",
+    "watch": "node-sass --watch src/resource/scss/app.scss src/public/css/app.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NguyenDuyGit/nodejs_Blog.git"
+  },
+  "keywords": [
+    "Blog",
+    "node"
+  ],
+  "author": "D",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NguyenDuyGit/nodejs_Blog/issues"
+  },
+  "homepage": "https://github.com/NguyenDuyGit/nodejs_Blog#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-handlebars": "^8.0.1",
+    "express-handlebars-paginate": "^1.0.3",
+    "handlebars-paginate": "^0.1.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.5.3",
+    "mongoose-delete": "^1.0.2",
+    "mongoose-slug-updater": "^3.3.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.4"
+  }
+}

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+h1 {
+  color: red; }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0; }
+
+.pagination-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; }
+
+.pagination-list li {
+  margin: 0 5px; }
+
+.pagination-list a, .pagination-list span {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #000;
+  /* Màu chữ cho các nút phân trang */
+  border: 2px solid #000;
+  /* Màu viền cho các nút phân trang */
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s; }
+
+.pagination-list a:hover {
+  background-color: #333;
+  /* Màu nền khi hover */
+  color: #fff;
+  /* Màu chữ khi hover */
+  transform: scale(1.1);
+  /* Phóng to khi hover để tăng tương tác */ }
+
+.pagination-list .active a {
+  background-color: red;
+  /* Màu nền cho nút phân trang hiện tại */
+  color: #ff0303;
+  /* Màu chữ cho nút phân trang hiện tại */
+  border-color: #000;
+  /* Màu viền cho nút phân trang hiện tại */
+  font-weight: bold;
+  /* Làm chữ đậm để nổi bật hơn */ }
+
+.pagination-list .disabled span {
+  color: #6c757d;
+  /* Màu chữ cho các nút phân trang bị vô hiệu hóa */
+  border-color: #6c757d;
+  /* Màu viền cho các nút phân trang bị vô hiệu hóa */
+  cursor: not-allowed; }
